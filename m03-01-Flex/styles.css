@@ -63,14 +63,12 @@
     padding: 0.5rem;
     margin: 0.5rem;
     width: calc(50% - 2rem);
-    flex-wrap: wrap;
 }
 .grey .text-two{
     background: #55f;
     padding: 0.5rem;
     margin: 0.5rem;
     width: 100%;
-    flex-wrap: wrap;
 }
 
 .red{
@@ -106,5 +104,21 @@
     .container-two{
         background: #ff0;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    .blue{
+        background: #00f;
+        flex-direction: column;
+    }
+    .grey{
+        flex-direction: column;
+        flex-grow: unset;
+    flex-wrap: nowrap;
+    }
+    .grey .text-one, 
+    .grey .text-two{
+        width: auto;
     }
 }
