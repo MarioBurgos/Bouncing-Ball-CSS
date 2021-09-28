@@ -101,3 +101,10 @@
     padding: 0.5rem;
     margin: 0.5rem;
 }
+
+@media (max-width: 768px){
+    .container-two{
+        background: #ff0;
+        flex-direction: column;
+    }
+}
