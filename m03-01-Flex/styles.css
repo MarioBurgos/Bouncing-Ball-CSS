@@ -1,6 +1,6 @@
 
 .container-one{
-    background: #000;
+    background-image: url("./img/bg-header.jpg");
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -8,24 +8,55 @@
 }
 
 .blue{
-    background: #00f;
+    background: #fff;
     padding: 1rem;
     margin: 0.5rem;
     display: flex;
+    align-items: center;
 }
+
 .blue .text-one{
-    background: #f00;
+    background: #fff;
     padding: 0.5rem;
     margin: 0.5rem;
     flex-grow: 1;
+    text-align: start;
 }
 .blue .text-two{
-    background: #f00;
+    background: #fff;
     padding: 0.5rem;
     margin: 0.5rem;
     flex-grow: 4;
 }
 
+.text-two ul, 
+.text-two a{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #888;
+    align-items: center;
+}
+i{
+    margin: 0.5rem;
+}
+
+a:hover{
+    transform: scale(1.1);
+    transform: rotateX(360deg);
+}
+
+.text-one ul,
+.text-one a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #888;
+    text-align: end;
+
+}
 
 .orange{
     background: #f60;
