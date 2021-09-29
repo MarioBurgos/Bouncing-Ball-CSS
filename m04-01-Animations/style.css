@@ -5,6 +5,7 @@
     border-radius: 50%;
     position: relative;
     animation: vertical 1s alternate infinite;
+    box-shadow: inset -25px -25px 50px rgba(0, 0, 0, 0.5);
 }
 
 .bota-vertical {
