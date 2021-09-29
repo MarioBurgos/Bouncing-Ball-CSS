@@ -1,0 +1,42 @@
+.pilota {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+    animation: vertical 1s alternate infinite;
+}
+
+.bota-vertical {
+    animation-name: vertical;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.mou-horizontal {
+    animation-name: horizontal;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes vertical {
+    from {
+        transform: translateY(calc(100vh - 200px));
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes horizontal {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(calc(100vh - 200px));
+    }
+}
